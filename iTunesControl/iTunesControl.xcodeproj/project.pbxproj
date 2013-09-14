@@ -20,7 +20,7 @@
 		1F3EF4F617E40E8F0076ECBE /* iTunesControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF4F517E40E8F0076ECBE /* iTunesControlTests.m */; };
 		1F3EF4FF17E40F720076ECBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3EF4CD17E40E8E0076ECBE /* Foundation.framework */; };
 		1F3EF50117E40F7E0076ECBE /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3EF50017E40F7E0076ECBE /* ScriptingBridge.framework */; };
-		1F3EF50A17E461550076ECBE /* GCDAsyncSocket in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EF50917E461550076ECBE /* GCDAsyncSocket */; };
+		1F3EF51717E468000076ECBE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF51617E468000076ECBE /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,8 @@
 		1F3EF4F417E40E8F0076ECBE /* iTunesControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunesControlTests.h; sourceTree = "<group>"; };
 		1F3EF4F517E40E8F0076ECBE /* iTunesControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesControlTests.m; sourceTree = "<group>"; };
 		1F3EF50017E40F7E0076ECBE /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		1F3EF50917E461550076ECBE /* GCDAsyncSocket */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GCDAsyncSocket; sourceTree = "<group>"; };
+		1F3EF51517E468000076ECBE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		1F3EF51617E468000076ECBE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,6 @@
 		1F3EF4BC17E40E8E0076ECBE = {
 			isa = PBXGroup;
 			children = (
-				1F3EF50017E40F7E0076ECBE /* ScriptingBridge.framework */,
 				1F3EF4CE17E40E8E0076ECBE /* iTunesControl */,
 				1F3EF4EE17E40E8F0076ECBE /* iTunesControlTests */,
 				1F3EF4C717E40E8E0076ECBE /* Frameworks */,
@@ -104,6 +104,7 @@
 		1F3EF4C717E40E8E0076ECBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F3EF50017E40F7E0076ECBE /* ScriptingBridge.framework */,
 				1F3EF4C817E40E8E0076ECBE /* Cocoa.framework */,
 				1F3EF4E917E40E8F0076ECBE /* SenTestingKit.framework */,
 				1F3EF4CA17E40E8E0076ECBE /* Other Frameworks */,
@@ -124,7 +125,8 @@
 		1F3EF4CE17E40E8E0076ECBE /* iTunesControl */ = {
 			isa = PBXGroup;
 			children = (
-				1F3EF50917E461550076ECBE /* GCDAsyncSocket */,
+				1F3EF51517E468000076ECBE /* GCDAsyncSocket.h */,
+				1F3EF51617E468000076ECBE /* GCDAsyncSocket.m */,
 				1F3EF4DA17E40E8F0076ECBE /* AppDelegate.h */,
 				1F3EF4DB17E40E8F0076ECBE /* AppDelegate.m */,
 				1F3EF4DD17E40E8F0076ECBE /* MainMenu.xib */,
@@ -239,7 +241,6 @@
 				1F3EF4D317E40E8F0076ECBE /* InfoPlist.strings in Resources */,
 				1F3EF4D917E40E8F0076ECBE /* Credits.rtf in Resources */,
 				1F3EF4DF17E40E8F0076ECBE /* MainMenu.xib in Resources */,
-				1F3EF50A17E461550076ECBE /* GCDAsyncSocket in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +278,7 @@
 				1F3EF4D517E40E8F0076ECBE /* main.m in Sources */,
 				1F3EF4DC17E40E8F0076ECBE /* AppDelegate.m in Sources */,
 				1F3EF4E217E40E8F0076ECBE /* iTunesControl.xcdatamodeld in Sources */,
+				1F3EF51717E468000076ECBE /* GCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +468,7 @@
 				1F3EF4FB17E40E8F0076ECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3EF4FC17E40E8F0076ECBE /* Build configuration list for PBXNativeTarget "iTunesControlTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +477,7 @@
 				1F3EF4FE17E40E8F0076ECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

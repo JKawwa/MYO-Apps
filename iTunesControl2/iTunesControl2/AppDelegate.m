@@ -1,125 +1,33 @@
 //
 //  AppDelegate.m
-//  iTunesControl
+//  iTunesControl2
 //
-//  Created by Jad Kawwa on 2013-09-13.
+//  Created by Jad Kawwa on 2013-09-14.
 //  Copyright (c) 2013 Jad Kawwa. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "iTunes.h"
-#import <Foundation/Foundation.h>
-#import <ScriptingBridge/ScriptingBridge.h>
-#include "GCDAsyncSocket.h"
+#import "GCDAsyncSocket.h"
 
 @implementation AppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
-void error(const char *msg);
-- (void)sendcmd:(NSString*)cmd {
-    
-    
-    
-}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
-    GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     // Insert code here to initialize your application
-    iTunesApplication * iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
-    iTunesTrack *current = iTunes.currentTrack;
-    NSString *name = current.name;
-    NSInteger position = iTunes.playerPosition;
-    printf("%s %d",[name UTF8String],(int)position);
-    iTunes.playerPosition=85;
-    SBElementArray *allSources = iTunes.sources;
-    iTunesSource *iTunesSource = allSources[0];
-    iTunesLibraryPlaylist *iTunesLibrary = iTunesSource.libraryPlaylists[0];
-    SBElementArray *allSongs = iTunesLibrary.fileTracks;
-    for (iTunesTrack *song in allSongs)
-    {
-        printf("%s\n",[song.name UTF8String]);
-    }
-
-  
-    
-    
-    
-    
-   // [self sendcmd:@"active"];
-    
-  //  GCDAsyncSocket *test = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-//    [test connectToHost:@"169.254.107.125" onPort:27015 withTimeout:0.5 error:NULL];
-    //    NSString *myStr = @"testing...123...\r\n";
-//    NSData *myData = [cmd dataUsingEncoding:NSUTF8StringEncoding];
-    
-//    [test writeData:myData withTimeout:0.5 tag:0];
-
+    GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
 
 }
 
-
-//int tryrun
-
-//void searchForSite(void)
-//{
-//    NSString *urlStr = @"169.254.107.125";
-//    if (![urlStr isEqualToString:@""]) {
-//        NSURL *website = [NSURL URLWithString:urlStr];
-//        if (!website) {
-//            NSLog(@"%@ is not a valid URL");
-//            return;
-//        }
-//        
-//        CFReadStreamRef readStream;
-//        CFWriteStreamRef writeStream;
-//        CFStreamCreatePairWithSocketToHost(NULL, (__bridge CFStringRef)[website host], 27015, &readStream, &writeStream);
-//        
-//        CFWriteStreamOpen(writeStream);
-//        CFWriteStreamWrite(writeStream, "Hello\n", 6);
-//        
-//        NSInputStream *inputStream = (__bridge_transfer NSInputStream *)readStream;
-//        NSOutputStream *outputStream = (__bridge_transfer NSOutputStream *) writeStream;
-//                                        
-////        [inputStream setDelegate:self];
-////        [outputStream setDelegate:self];
-//        
-//        [inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-//        [outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-//        [inputStream open];
-//        [outputStream open];
-//        
-//        uint8 *inputS;
-//        NSString *outputS = @"ACTIVATED!";
-//        int i;
-//        for(int i=0; i<100; i++)
-//        {
-//            [outputStream write: (uint8 *)[outputS UTF8String] maxLength:11];
-//            printf("sent!\n");
-//        }
-//        while(1)
-//        {
-//            printf("attempting to read...");
-//            while (![inputStream hasBytesAvailable])
-//            {}
-//            [inputStream read:inputS maxLength:20];
-//            printf("%s",(char *)inputS);
-//        }
-////        [outputStream write:outputS maxLength:20];
-//        /* Store a reference to the input and output streams so that
-//         they don't go away.... */
-//    }
-//}
-
-// Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.JK3.iTunesControl" in the user's Application Support directory.
+// Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.JK3.iTunesControl2" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSURL *appSupportURL = [[fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-    return [appSupportURL URLByAppendingPathComponent:@"com.JK3.iTunesControl"];
+    return [appSupportURL URLByAppendingPathComponent:@"com.JK3.iTunesControl2"];
 }
 
 // Creates if necessary and returns the managed object model for the application.
@@ -129,7 +37,7 @@ void error(const char *msg);
         return _managedObjectModel;
     }
 	
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"iTunesControl" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"iTunesControl2" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -176,7 +84,7 @@ void error(const char *msg);
         }
     }
     
-    NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"iTunesControl.storedata"];
+    NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"iTunesControl2.storedata"];
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
     if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
         [[NSApplication sharedApplication] presentError:error];
@@ -276,10 +184,3 @@ void error(const char *msg);
 }
 
 @end
-
-void error(const char *msg)
-{
-    perror(msg);
-    exit(0);
-}
-
