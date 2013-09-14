@@ -20,10 +20,10 @@
 void error(const char *msg);
 
 iTunesApplication * iTunes;
-GCDAsyncSocket *socket;
+//GCDAsyncSocket *socket;
 
 - (void)sendcmd:(NSString*)cmd {
-    socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     NSError *error = nil;
     uint16_t port = 27015;//[[[self serverPort] text] intValue];
@@ -37,20 +37,25 @@ GCDAsyncSocket *socket;
     {
         printf("Connecting...");
     }
-//    NSString *requestStr = @"active";
+    NSString *requestStr = @"JKJKJKJKJKJK";
     NSData *requestData = [cmd dataUsingEncoding:NSUTF8StringEncoding];
-    while (1)
-    {
-    [socket writeData:requestData withTimeout:-1.0 tag:0];
-    }
+//    while (1)
+//    {
+    [socket writeData:requestData withTimeout:1.0 tag:0];
+//=    }
+    NSData *received = [[NSData alloc] init];
     while (1)
     {
         if (socket != nil)
-            [socket readDataWithTimeout:5.0 tag:0];
+        {
+            [socket readDataToData:received withTimeout:10.0 tag:0];
+            if((int)[received length] > 0)
+                [self execute:socket receivedData:received socket:socket];
+        }
     }
 }
            
-- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
+- (void)execute:(GCDAsyncSocket *)sock receivedData:(NSData *)data socket:(GCDAsyncSocket*)socket
 {
     printf("%s\n",[(NSString *)data UTF8String]);
     NSString *cmd = (NSString *)data;
@@ -78,6 +83,8 @@ GCDAsyncSocket *socket;
             if([song.name isEqualToString:inputName])
             {
                 [song playOnce:true];
+                iTunes.playerPosition = [inputTime integerValue];
+                break;
             }
 //          printf("%s\n",[song.name UTF8String]);
         }
@@ -99,12 +106,12 @@ GCDAsyncSocket *socket;
     iTunesTrack *current = iTunes.currentTrack;
     NSString *name = current.name;
     NSInteger position = iTunes.playerPosition;
-    printf("%s %d",[name UTF8String],(int)position);
+    printf("%s %d\n",[name UTF8String],(int)position);
     iTunes.playerPosition=85;
 
 
   
-    [self sendcmd:@"HELLO!"];
+    [self sendcmd:@"JK3"];
     
     
     
