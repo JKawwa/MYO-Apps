@@ -462,6 +462,7 @@
 				1F3EF55717E4686D0076ECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3EF55817E4686D0076ECBE /* Build configuration list for PBXNativeTarget "iTunesControl2Tests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				1F3EF55A17E4686D0076ECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
