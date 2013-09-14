@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E29386B217E45FE400477BC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29386B117E45FE400477BC1 /* Cocoa.framework */; };
+		E29386BC17E45FE400477BC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E29386BA17E45FE400477BC1 /* InfoPlist.strings */; };
+		E29386BE17E45FE400477BC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29386BD17E45FE400477BC1 /* main.m */; };
+		E29386C217E45FE400477BC1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E29386C017E45FE400477BC1 /* Credits.rtf */; };
+		E29386C517E45FE400477BC1 /* NXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29386C417E45FE400477BC1 /* NXAppDelegate.m */; };
+		E29386C817E45FE400477BC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29386C617E45FE400477BC1 /* MainMenu.xib */; };
+		E29386CA17E45FE400477BC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29386C917E45FE400477BC1 /* Images.xcassets */; };
+		E29386D117E45FE400477BC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29386D017E45FE400477BC1 /* XCTest.framework */; };
+		E29386D217E45FE400477BC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29386B117E45FE400477BC1 /* Cocoa.framework */; };
+		E29386DA17E45FE400477BC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E29386D817E45FE400477BC1 /* InfoPlist.strings */; };
+		E29386DC17E45FE400477BC1 /* Next36MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E29386DB17E45FE400477BC1 /* Next36MacTests.m */; };
+		E29386EA17E4601F00477BC1 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E29386E717E4601F00477BC1 /* GCDAsyncSocket.m */; };
+		E29386EB17E4601F00477BC1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E29386E917E4601F00477BC1 /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E29386D317E45FE400477BC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E29386A617E45FE300477BC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29386AD17E45FE300477BC1;
+			remoteInfo = Next36Mac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E29386AE17E45FE300477BC1 /* Next36Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Next36Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29386B117E45FE400477BC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E29386B417E45FE400477BC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E29386B517E45FE400477BC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E29386B617E45FE400477BC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E29386B917E45FE400477BC1 /* Next36Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Next36Mac-Info.plist"; sourceTree = "<group>"; };
+		E29386BB17E45FE400477BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E29386BD17E45FE400477BC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E29386BF17E45FE400477BC1 /* Next36Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Next36Mac-Prefix.pch"; sourceTree = "<group>"; };
+		E29386C117E45FE400477BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E29386C317E45FE400477BC1 /* NXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXAppDelegate.h; sourceTree = "<group>"; };
+		E29386C417E45FE400477BC1 /* NXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXAppDelegate.m; sourceTree = "<group>"; };
+		E29386C717E45FE400477BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E29386C917E45FE400477BC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E29386CF17E45FE400477BC1 /* Next36MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = Next36MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29386D017E45FE400477BC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E29386D717E45FE400477BC1 /* Next36MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Next36MacTests-Info.plist"; sourceTree = "<group>"; };
+		E29386D917E45FE400477BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E29386DB17E45FE400477BC1 /* Next36MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Next36MacTests.m; sourceTree = "<group>"; };
+		E29386E617E4601F00477BC1 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E29386E717E4601F00477BC1 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E29386E817E4601F00477BC1 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E29386E917E4601F00477BC1 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29386AB17E45FE300477BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386B217E45FE400477BC1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29386CC17E45FE400477BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386D217E45FE400477BC1 /* Cocoa.framework in Frameworks */,
+				E29386D117E45FE400477BC1 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E29386A517E45FE300477BC1 = {
+			isa = PBXGroup;
+			children = (
+				E29386B717E45FE400477BC1 /* Next36Mac */,
+				E29386D517E45FE400477BC1 /* Next36MacTests */,
+				E29386B017E45FE300477BC1 /* Frameworks */,
+				E29386AF17E45FE300477BC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E29386AF17E45FE300477BC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29386AE17E45FE300477BC1 /* Next36Mac.app */,
+				E29386CF17E45FE400477BC1 /* Next36MacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E29386B017E45FE300477BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29386B117E45FE400477BC1 /* Cocoa.framework */,
+				E29386D017E45FE400477BC1 /* XCTest.framework */,
+				E29386B317E45FE400477BC1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29386B317E45FE400477BC1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29386B417E45FE400477BC1 /* AppKit.framework */,
+				E29386B517E45FE400477BC1 /* CoreData.framework */,
+				E29386B617E45FE400477BC1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E29386B717E45FE400477BC1 /* Next36Mac */ = {
+			isa = PBXGroup;
+			children = (
+				E29386C317E45FE400477BC1 /* NXAppDelegate.h */,
+				E29386C417E45FE400477BC1 /* NXAppDelegate.m */,
+				E29386C617E45FE400477BC1 /* MainMenu.xib */,
+				E29386C917E45FE400477BC1 /* Images.xcassets */,
+				E29386B817E45FE400477BC1 /* Supporting Files */,
+			);
+			path = Next36Mac;
+			sourceTree = "<group>";
+		};
+		E29386B817E45FE400477BC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29386E517E4601F00477BC1 /* GCDAsync */,
+				E29386B917E45FE400477BC1 /* Next36Mac-Info.plist */,
+				E29386BA17E45FE400477BC1 /* InfoPlist.strings */,
+				E29386BD17E45FE400477BC1 /* main.m */,
+				E29386BF17E45FE400477BC1 /* Next36Mac-Prefix.pch */,
+				E29386C017E45FE400477BC1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29386D517E45FE400477BC1 /* Next36MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				E29386DB17E45FE400477BC1 /* Next36MacTests.m */,
+				E29386D617E45FE400477BC1 /* Supporting Files */,
+			);
+			path = Next36MacTests;
+			sourceTree = "<group>";
+		};
+		E29386D617E45FE400477BC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29386D717E45FE400477BC1 /* Next36MacTests-Info.plist */,
+				E29386D817E45FE400477BC1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29386E517E4601F00477BC1 /* GCDAsync */ = {
+			isa = PBXGroup;
+			children = (
+				E29386E617E4601F00477BC1 /* GCDAsyncSocket.h */,
+				E29386E717E4601F00477BC1 /* GCDAsyncSocket.m */,
+				E29386E817E4601F00477BC1 /* GCDAsyncUdpSocket.h */,
+				E29386E917E4601F00477BC1 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDAsync;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E29386AD17E45FE300477BC1 /* Next36Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29386DF17E45FE400477BC1 /* Build configuration list for PBXNativeTarget "Next36Mac" */;
+			buildPhases = (
+				E29386AA17E45FE300477BC1 /* Sources */,
+				E29386AB17E45FE300477BC1 /* Frameworks */,
+				E29386AC17E45FE300477BC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Next36Mac;
+			productName = Next36Mac;
+			productReference = E29386AE17E45FE300477BC1 /* Next36Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E29386CE17E45FE400477BC1 /* Next36MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29386E217E45FE400477BC1 /* Build configuration list for PBXNativeTarget "Next36MacTests" */;
+			buildPhases = (
+				E29386CB17E45FE400477BC1 /* Sources */,
+				E29386CC17E45FE400477BC1 /* Frameworks */,
+				E29386CD17E45FE400477BC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29386D417E45FE400477BC1 /* PBXTargetDependency */,
+			);
+			name = Next36MacTests;
+			productName = Next36MacTests;
+			productReference = E29386CF17E45FE400477BC1 /* Next36MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E29386A617E45FE300477BC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NX;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nathan Chau";
+				TargetAttributes = {
+					E29386CE17E45FE400477BC1 = {
+						TestTargetID = E29386AD17E45FE300477BC1;
+					};
+				};
+			};
+			buildConfigurationList = E29386A917E45FE300477BC1 /* Build configuration list for PBXProject "Next36Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E29386A517E45FE300477BC1;
+			productRefGroup = E29386AF17E45FE300477BC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29386AD17E45FE300477BC1 /* Next36Mac */,
+				E29386CE17E45FE400477BC1 /* Next36MacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E29386AC17E45FE300477BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386BC17E45FE400477BC1 /* InfoPlist.strings in Resources */,
+				E29386CA17E45FE400477BC1 /* Images.xcassets in Resources */,
+				E29386C217E45FE400477BC1 /* Credits.rtf in Resources */,
+				E29386C817E45FE400477BC1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29386CD17E45FE400477BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386DA17E45FE400477BC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E29386AA17E45FE300477BC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386EB17E4601F00477BC1 /* GCDAsyncUdpSocket.m in Sources */,
+				E29386EA17E4601F00477BC1 /* GCDAsyncSocket.m in Sources */,
+				E29386C517E45FE400477BC1 /* NXAppDelegate.m in Sources */,
+				E29386BE17E45FE400477BC1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29386CB17E45FE400477BC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29386DC17E45FE400477BC1 /* Next36MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E29386D417E45FE400477BC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29386AD17E45FE300477BC1 /* Next36Mac */;
+			targetProxy = E29386D317E45FE400477BC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E29386BA17E45FE400477BC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29386BB17E45FE400477BC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E29386C017E45FE400477BC1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29386C117E45FE400477BC1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E29386C617E45FE400477BC1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29386C717E45FE400477BC1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E29386D817E45FE400477BC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29386D917E45FE400477BC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E29386DD17E45FE400477BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E29386DE17E45FE400477BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E29386E017E45FE400477BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Next36Mac/Next36Mac-Prefix.pch";
+				INFOPLIST_FILE = "Next36Mac/Next36Mac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E29386E117E45FE400477BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Next36Mac/Next36Mac-Prefix.pch";
+				INFOPLIST_FILE = "Next36Mac/Next36Mac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E29386E317E45FE400477BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Next36Mac.app/Contents/MacOS/Next36Mac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Next36Mac/Next36Mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Next36MacTests/Next36MacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E29386E417E45FE400477BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Next36Mac.app/Contents/MacOS/Next36Mac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Next36Mac/Next36Mac-Prefix.pch";
+				INFOPLIST_FILE = "Next36MacTests/Next36MacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E29386A917E45FE300477BC1 /* Build configuration list for PBXProject "Next36Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29386DD17E45FE400477BC1 /* Debug */,
+				E29386DE17E45FE400477BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29386DF17E45FE400477BC1 /* Build configuration list for PBXNativeTarget "Next36Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29386E017E45FE400477BC1 /* Debug */,
+				E29386E117E45FE400477BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E29386E217E45FE400477BC1 /* Build configuration list for PBXNativeTarget "Next36MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29386E317E45FE400477BC1 /* Debug */,
+				E29386E417E45FE400477BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E29386A617E45FE300477BC1 /* Project object */;
+}
