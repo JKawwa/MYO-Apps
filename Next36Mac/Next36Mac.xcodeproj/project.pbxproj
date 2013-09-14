@@ -47,7 +47,7 @@
 		E29386C417E45FE400477BC1 /* NXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXAppDelegate.m; sourceTree = "<group>"; };
 		E29386C717E45FE400477BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E29386C917E45FE400477BC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E29386CF17E45FE400477BC1 /* Next36MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = Next36MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29386CF17E45FE400477BC1 /* Next36MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Next36MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29386D017E45FE400477BC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E29386D717E45FE400477BC1 /* Next36MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Next36MacTests-Info.plist"; sourceTree = "<group>"; };
 		E29386D917E45FE400477BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -487,6 +487,7 @@
 				E29386E117E45FE400477BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29386E217E45FE400477BC1 /* Build configuration list for PBXNativeTarget "Next36MacTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +496,7 @@
 				E29386E417E45FE400477BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

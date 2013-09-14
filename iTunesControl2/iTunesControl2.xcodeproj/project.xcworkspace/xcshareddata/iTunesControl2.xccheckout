@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5798B909-9F37-4BD1-9C30-A6345D5FA531</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iTunesControl2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39B4F79B-DF0B-472E-A579-220269AD65DB</key>
+		<string>https://github.com/JKawwa/MYO-Apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iTunesControl2/iTunesControl2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39B4F79B-DF0B-472E-A579-220269AD65DB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JKawwa/MYO-Apps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39B4F79B-DF0B-472E-A579-220269AD65DB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39B4F79B-DF0B-472E-A579-220269AD65DB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MYO Apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
