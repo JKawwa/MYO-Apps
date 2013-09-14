@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F121CEC17E46FB300AB075C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F121CEB17E46FB300AB075C /* Security.framework */; };
 		1F3EF52517E4686D0076ECBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3EF52417E4686D0076ECBE /* Cocoa.framework */; };
 		1F3EF52F17E4686D0076ECBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EF52D17E4686D0076ECBE /* InfoPlist.strings */; };
 		1F3EF53117E4686D0076ECBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF53017E4686D0076ECBE /* main.m */; };
@@ -32,7 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F3EF52117E4686D0076ECBE /* iTunesControl2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesControl2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F121CEB17E46FB300AB075C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1F3EF52117E4686D0076ECBE /* iTunesControl2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iTunesControl2.app; path = "/Users/Jad_Kawwa/Desktop/MYO Apps/iTunesControl2/build/Debug/iTunesControl2.app"; sourceTree = "<absolute>"; };
 		1F3EF52417E4686D0076ECBE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F3EF52717E4686D0076ECBE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1F3EF52817E4686D0076ECBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -46,7 +48,7 @@
 		1F3EF53717E4686D0076ECBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F3EF53A17E4686D0076ECBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1F3EF53D17E4686D0076ECBE /* iTunesControl2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesControl2.xcdatamodel; sourceTree = "<group>"; };
-		1F3EF54417E4686D0076ECBE /* iTunesControl2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesControl2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3EF54417E4686D0076ECBE /* iTunesControl2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = iTunesControl2Tests.octest; path = "/Users/Jad_Kawwa/Desktop/MYO Apps/iTunesControl2/build/Debug/iTunesControl2Tests.octest"; sourceTree = "<absolute>"; };
 		1F3EF54517E4686D0076ECBE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1F3EF54C17E4686D0076ECBE /* iTunesControl2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunesControl2Tests-Info.plist"; sourceTree = "<group>"; };
 		1F3EF54E17E4686D0076ECBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F121CEC17E46FB300AB075C /* Security.framework in Frameworks */,
 				1F3EF52517E4686D0076ECBE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,22 +86,13 @@
 				1F3EF52A17E4686D0076ECBE /* iTunesControl2 */,
 				1F3EF54A17E4686D0076ECBE /* iTunesControl2Tests */,
 				1F3EF52317E4686D0076ECBE /* Frameworks */,
-				1F3EF52217E4686D0076ECBE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		1F3EF52217E4686D0076ECBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1F3EF52117E4686D0076ECBE /* iTunesControl2.app */,
-				1F3EF54417E4686D0076ECBE /* iTunesControl2Tests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1F3EF52317E4686D0076ECBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F121CEB17E46FB300AB075C /* Security.framework */,
 				1F3EF52417E4686D0076ECBE /* Cocoa.framework */,
 				1F3EF54517E4686D0076ECBE /* SenTestingKit.framework */,
 				1F3EF52617E4686D0076ECBE /* Other Frameworks */,
@@ -217,7 +211,7 @@
 				en,
 			);
 			mainGroup = 1F3EF51817E4686D0076ECBE;
-			productRefGroup = 1F3EF52217E4686D0076ECBE /* Products */;
+			productRefGroup = 1F3EF51817E4686D0076ECBE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

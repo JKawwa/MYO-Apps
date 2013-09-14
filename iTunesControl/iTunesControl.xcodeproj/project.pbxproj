@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F121CEE17E46FEE00AB075C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F121CED17E46FEE00AB075C /* Security.framework */; };
 		1F3EF4C917E40E8E0076ECBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3EF4C817E40E8E0076ECBE /* Cocoa.framework */; };
 		1F3EF4D317E40E8F0076ECBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EF4D117E40E8E0076ECBE /* InfoPlist.strings */; };
 		1F3EF4D517E40E8F0076ECBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF4D417E40E8F0076ECBE /* main.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F121CED17E46FEE00AB075C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1F3EF4C517E40E8E0076ECBE /* iTunesControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3EF4C817E40E8E0076ECBE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F3EF4CB17E40E8E0076ECBE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F121CEE17E46FEE00AB075C /* Security.framework in Frameworks */,
 				1F3EF50117E40F7E0076ECBE /* ScriptingBridge.framework in Frameworks */,
 				1F3EF4FF17E40F720076ECBE /* Foundation.framework in Frameworks */,
 				1F3EF4C917E40E8E0076ECBE /* Cocoa.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		1F3EF4C717E40E8E0076ECBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F121CED17E46FEE00AB075C /* Security.framework */,
 				1F3EF50017E40F7E0076ECBE /* ScriptingBridge.framework */,
 				1F3EF4C817E40E8E0076ECBE /* Cocoa.framework */,
 				1F3EF4E917E40E8F0076ECBE /* SenTestingKit.framework */,

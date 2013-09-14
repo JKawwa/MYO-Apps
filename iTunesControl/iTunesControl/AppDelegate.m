@@ -10,7 +10,7 @@
 #import "iTunes.h"
 #import <Foundation/Foundation.h>
 #import <ScriptingBridge/ScriptingBridge.h>
-#include "GCDAsyncSocket.h"
+#import "GCDAsyncSocket.h"
 
 @implementation AppDelegate
 
@@ -18,34 +18,93 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 void error(const char *msg);
+
+iTunesApplication * iTunes;
+GCDAsyncSocket *socket;
+
 - (void)sendcmd:(NSString*)cmd {
+    socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
+    NSError *error = nil;
+    uint16_t port = 27015;//[[[self serverPort] text] intValue];
     
-    
+    if (![socket connectToHost:@"169.254.107.125" onPort:port error:&error])
+    {
+        printf("Unable to connect to due to invalid configuration: %s", error);
+        //  [self debugPrint:[NSString stringWithFormat:@"Unable to connect to due to invalid configuration: %@", error]];
+    }
+    else
+    {
+        printf("Connecting...");
+    }
+//    NSString *requestStr = @"active";
+    NSData *requestData = [cmd dataUsingEncoding:NSUTF8StringEncoding];
+    while (1)
+    {
+    [socket writeData:requestData withTimeout:-1.0 tag:0];
+    }
+    while (1)
+    {
+        if (socket != nil)
+            [socket readDataWithTimeout:5.0 tag:0];
+    }
+}
+           
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
+{
+    printf("%s\n",[(NSString *)data UTF8String]);
+    NSString *cmd = (NSString *)data;
+    if ([cmd rangeOfString:@"info"].location != NSNotFound)
+    {
+        iTunesTrack *current = iTunes.currentTrack;
+        NSString *name = current.name;
+        NSInteger position = iTunes.playerPosition;
+        NSString *posS = [NSString stringWithFormat:@"%d", (int)position];
+        NSMutableString *finalsend;
+        finalsend = [NSString stringWithFormat:@"play:%@:%@", name, posS];
+        NSData *sendData = [finalsend dataUsingEncoding:NSUTF8StringEncoding];
+        [socket writeData:sendData withTimeout:-1.0 tag:0];
+    }
+    else if([cmd rangeOfString:@"play"].location != NSNotFound)
+    {
+        NSString *inputName = [cmd componentsSeparatedByString:@":"][1];
+        NSString *inputTime = [cmd componentsSeparatedByString:@":"][2];
+        SBElementArray *allSources = iTunes.sources;
+        iTunesSource *iTunesSource = allSources[0];
+        iTunesLibraryPlaylist *iTunesLibrary = iTunesSource.libraryPlaylists[0];
+        SBElementArray *allSongs = iTunesLibrary.fileTracks;
+        for (iTunesTrack *song in allSongs)
+        {
+            if([song.name isEqualToString:inputName])
+            {
+                [song playOnce:true];
+            }
+//          printf("%s\n",[song.name UTF8String]);
+        }
+    }
+    else if([cmd isEqualToString:@"pause"])
+    {
+        [iTunes pause];
+    }
+    else if([cmd isEqualToString:@"next"])
+    {
+        [iTunes nextTrack];
+    }
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
-    GCDAsyncSocket *socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     // Insert code here to initialize your application
-    iTunesApplication * iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+    iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
     iTunesTrack *current = iTunes.currentTrack;
     NSString *name = current.name;
     NSInteger position = iTunes.playerPosition;
     printf("%s %d",[name UTF8String],(int)position);
     iTunes.playerPosition=85;
-    SBElementArray *allSources = iTunes.sources;
-    iTunesSource *iTunesSource = allSources[0];
-    iTunesLibraryPlaylist *iTunesLibrary = iTunesSource.libraryPlaylists[0];
-    SBElementArray *allSongs = iTunesLibrary.fileTracks;
-    for (iTunesTrack *song in allSongs)
-    {
-        printf("%s\n",[song.name UTF8String]);
-    }
+
 
   
-    
+    [self sendcmd:@"HELLO!"];
     
     
     
