@@ -1,0 +1,16 @@
+﻿Build started 9/14/2013 9:37:12 AM.
+     1>Project "C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\hello-world-cpp\hello-world-cpp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\\myo" /Zi /nologo /W3 /WX- /sdl /Od /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt "hello-world.cpp"
+         hello-world.cpp
+     1>hello-world.cpp(292): warning C4101: 'iSendResult' : unreferenced local variable
+     1>hello-world.cpp(396): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\stuart alldritt\documents\myo\windows\myo-sdk\hello-world-cpp\hello-world-cpp\hello-world.cpp(391): warning C4715: 'ProcessClient' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\x64\Debug\hello-world-cpp.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Ws2_32.lib ../myo/lib/myo.lib "../myo/lib/libboost_serialization-vc110-mt-gd-1_54.lib" "../myo/lib/libboost_system-vc110-mt-gd-1_54.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\x64\Debug\hello-world-cpp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\x64\Debug\hello-world-cpp.lib" /MACHINE:X64 "x64\Debug\hello-world.obj"
+         hello-world-cpp.vcxproj -> C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\x64\Debug\hello-world-cpp.exe
+     1>Done Building Project "C:\Users\Stuart Alldritt\Documents\MYO\Windows\myo-sdk\hello-world-cpp\hello-world-cpp\hello-world-cpp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.70
